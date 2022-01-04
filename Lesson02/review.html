@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+</head>
+<body>
+    <h1>Các thẻ html5 cơ bản</h1>
+    <hr/>
+    <p>
+        <b>Lorem</b> ipsum dolor sit amet, <i>consectetur</i> adipisicing elit. 
+        <br>
+        <strong>Eius obcaecati optio</strong>, 
+        quam repellat, <small>quisquam</small> 
+        facere 
+        corrupti id unde dolor minus debitis 
+        odio 
+        <span style="font-size: 2rem;">
+            commodi</span> ea aut 
+        illum nihil eaque <u>a placeat</u> ?
+    </p>
+    <hr>
+    <h2>Thẻ hiển thị hình ảnh</h2>
+    <p>
+        Địa chỉ tuyệt đối (url - tuyệt đối):
+        <br>
+        <img src="https://devmaster.edu.vn/images/logo.png" 
+            alt="Logo Devmaster">
+        <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v515/v2_2019/pc/graphics/logo.svg" 
+            alt="VnExpress">
+    </p>
+    <p>
+        Đỉa chỉ hình ảnh tương đối:
+        <pre>
+            - Vào thư mục 
+                + thumuc/thu-muc-con/file-hinh-anh.jpg
+                + ví dụ: images/logo-2022.svg
+            - ra ngoài một thư mục:
+                + ../ (ra ngoài một thư mục, tính từ 
+                        vị trí hiện tại)
+                + ví dụ: 
+                    ../Lesson01/images/logo.png
+        </pre>
+        <hr>
+        <img src="./images/logo-2022.svg" alt="Dantri">
+        <img src="../Lesson01/images/logo.png" 
+            alt="Devmaster Academy">
+    </p>
+    <hr>
+    <h2>Liên kết trang</h2>
+    <pre>
+        Sử dụng thẻ liên kết:
+        thẻ a 
+        tag         :    a 
+        attribute   :   href = url (tương đối, tuyệt đối)
+                    :   title = "Nội dung văn bản"
+                    :   target= 
+                    
+                    Value	Description
+                    _blank	Opens the linked document in a new window or tab
+                    _self	Opens the linked document in the same frame as it was clicked (this is default)
+                    _parent	Opens the linked document in the parent frame
+                    _top	Opens the linked document in the full body of the window
+                    framename	Opens the linked document in the named iframe
+    </pre>
+    <p>
+        Liên kết tuyệt đối (Liên kết ngoài)
+        <br>
+        <a href="https://devmaster.edu.vn" title="Devmaster Academy"
+            target="_blank">
+            Click here => devmaster.edu.vn
+        </a>
+    </p>
+    <p>
+        Liên kết tương đối (Liên kế trong)
+        <br>
+
+        <a href="logo-2022.svg">
+            Hình ảnh
+        </a>
+        <br>
+        <a href="index.html" title="Trang chủ">
+            Trang chủ
+        </a>
+    </p>
+    <hr>
+    <h2>Liên kế hình ảnh</h2>
+    <a  href="https://devmaster.edu.vn"
+        title="Devmaster Academy" target="_blank">
+        
+        <img src="https://devmaster.edu.vn/images/logo.png" 
+        alt="Logo Devmaster">
+    </a>
+</body>
+</html>

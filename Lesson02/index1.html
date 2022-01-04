@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ hiển thị danh sách</title>
+    <style>
+        *{
+            margin: 0;
+            /* padding: 0; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Thẻ hiển thị danh sách: ul, ol , li; dd, dt, dl </h1>
+    <hr>
+    <pre>
+        ul => tạo danh sách không có thứ tự  bullet
+        ol => tạo danh sách có thứ tự : 
+            numbering 
+            1,2,3..
+            a,b,c ... 
+            i,ii, iii, ... 
+            I, II, III, IV, ...
+        li  => các phần tử trong danh sách
+    </pre>
+    <hr>
+    <h2>Danh sách không có thứ tự</h2>
+    <p>Lập trình frontend</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>.psd => .html</li>
+    </ul>
+    <p>Lập trình frontend</p>
+    <ul type="circle">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>.psd => .html</li>
+    </ul>
+    <p>Lập trình frontend</p>
+    <ul type="square">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>.psd => .html</li>
+    </ul>
+    <hr>
+    <h2>Danh sách có thứ tự: ol, li</h2>
+    <p>Lập trình frontend</p>
+    <ol>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>.psd => .html</li>
+    </ol>
+    <p>Lập trình frontend</p>
+    <ol type="A">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>.psd => .html</li>
+    </ol>
+    <p>Lập trình frontend</p>
+    <ol type="I" start="2">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        <li>.psd => .html</li>
+    </ol>
+
+    <hr>
+    <h2>Menu</h2>
+    <ul class="menu">
+        <li>Lập trình frontend</li>
+        <li><a href="#" title="HTML5">HTML5  </a></li>
+        <li><a href="#" title="CSS3">CSS3  </a></li>
+        <li><a href="#" title="Javascript">Javascript  </a></li>
+        <li><a href="#" title="JQuery">JQuery </a></li>
+        <li><a href="#" title="Bootstrap">Bootstrap  </a></li>
+        <li><a href="#" title=".psd => .html">.psd => .html  </a></li>
+    </ul>
+
+    <style>
+        .menu{
+            margin-left: 15px;
+            border:1px solid #ccc;
+            width: 200px;
+            list-style: none;
+            padding: 10px;
+        }
+        .menu >li:first-child{
+            background-color: aqua;
+            padding: .5rem;
+        }
+        .menu li{
+            background-color: #ccc;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu li a{
+            display: block;
+            padding: .5rem;
+            text-decoration: none;
+            color: #484848;
+        }
+        .menu li a:hover{
+            background-color: bisque;
+        }
+    </style>
+</body>
+</html>
