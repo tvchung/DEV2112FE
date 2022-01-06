@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form và các điều khiển trên form</title>
+</head>
+<body>
+    <h1>Form và các điều khiển trên form</h1>
+    <form action="" method="post" id="frm" name="frm">
+        <p>
+            Text:
+            <input type="text" name="txt" id="txt" 
+                placeholder="Nhập dữ liệu text...">
+        </p>
+        <p>
+            Pass:
+            <input type="password" id="pass" name="pass"
+                placeholder="Nhập mật khẩu...">
+        </p>
+        <p>
+            Check:
+            <input type="checkbox" name="chk" id="chk1" checked> Check1
+            <br>
+            <input type="checkbox" name="chk" id="chk2"> Check2
+            <br>
+            <input type="checkbox" name="chk" id="chk3"> Check3
+        </p>
+        <p>
+            radio: (lựa chọn 1 trong nhiều khả năng lựa chọn)
+            <br>
+            <input type="radio" name="rad" id="rad1"> Nam 
+            <br>
+            <input type="radio" name="rad" id="rad2"> Nữ
+            <br>
+            <input type="radio" name="rad" id="rad3"> Khác
+        </p>
+        <p>
+            File:
+            <input type="file" name="chon" id="chon">Chọn ảnh
+        </p>
+        <p>
+            number: (chỉ cho phép nhập số)
+            <br>
+            <input type="number" name="num" id="num"
+                value="30" min=0 max=100 step="10">
+        </p>
+        <p>
+            Number (range) -> chọn kéo thanh trượt 
+            <br>
+            <input type="range" name="rang" id="rang"
+                min="10" max="1000" value="50" step="1">
+        </p>
+        <p>
+            Chọn màu:
+            <br>
+            <input type="color" name="mau" id="mau" value="#f0f1f2">
+        </p>
+        <p>
+            date /datetime-local
+            <br>
+            <input type="date" name="dt" id="dt">
+            <br>
+            <input type="datetime-local" name="dtt" id="dtt">
+        </p>
+        <p>
+            Email:
+            <br>
+            <input type="email" name="mail" id="mail" required>
+        </p>
+        <p>
+            tel:
+            <br>
+            <input type="tel" name="tel" id="tel">
+        </p>
+        <p>
+            Danh sách lựa chọn:
+            <br>
+            <select name="chon" id="chon">
+                <option value="0">---all---</option>
+                <option value="1">Tp Hà nội</option>
+                <option value="2">Tp. HCM</option>
+                <option value="3">Đã nẵng</option>
+            </select>
+        </p>
+        <p>
+            Địa chỉ:
+            <br>
+            <textarea name="diachi" id="diachi" cols="30" rows="3"></textarea>
+        </p>
+        <p>
+            <input type="reset" value="Làm lại">
+            <input type="submit" value="Đăng ký">
+            <input type="button" value="Chọn">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section#login{
+            background-color: #ccc;
+            padding:2rem 0;
+        }
+        form{
+            margin: 0rem 20%;
+            background-color: #fff;
+            border-radius: 1rem;
+            padding: 1rem;
+            box-shadow: 33px -55px 5px -80px rgba(0,0,0,0.5) inset;;
+        }
+
+        .form-group{
+            display: flex;
+            margin: .5rem 0;
+        }
+        label{
+            display: inline-block;
+            width: 25%;
+        }
+        .form-control {
+            width: 75%;
+        }
+        .form-control input{
+            border: 1px solid #ccc;
+            padding: .5rem 1rem;
+            border-radius: .5rem;
+            width: calc(100% - 5rem);
+        }
+       .center{
+            display: flex;
+            justify-content: center;
+       }
+       input[type="submit"],
+       input[type="reset"]
+       {
+           border: 0;
+           padding: .5rem 1rem;
+           border-radius: .5rem;
+           margin: 0 .25rem;
+       }
+       input[type="submit"]{
+           color: yellow;
+           background-color: green;
+       }
+       input[type="reset"]{
+           background-color: yellow;
+           color: green;
+       }
+    </style>
+</head>
+<body>
+    <section id="login">
+        <form action="" method="post">
+            <div class="form-group center">
+                <img src="https://devmaster.edu.vn/images/logo.png" 
+                    alt="Đăng nhập hệ thống">
+            </div>
+            <div class="form-group">
+                <label for="taiKhoan">Tài khoản</label>
+                <div class="form-control">
+                    <input type="text" name="taiKhoan" id="taiKhoan" 
+                        placeholder="Nhập tài khoản...">
+                    <span id="errTaiKhoan" class="error">(*)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="matKhau">Mật khẩu</label>
+                <div class="form-control">
+                    <input type="text" name="matKhau" id="matKhau" 
+                        placeholder="Nhập mật khẩu...">
+                    <span id="errMatKhau" class="error">(*)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <div class="form-control">
+                    <input type="checkbox" name="ghiNho" id="ghiNho">
+                    <label for="ghiNho">Ghi nhớ</label>
+                </div>
+            </div>
+            <div class="form-group center">
+                <input type="submit" value="Đăng nhập">
+                <input type="reset" value="Làm lại">
+            </div>
+        </form>
+    </section>   
+</body>
+</html>
