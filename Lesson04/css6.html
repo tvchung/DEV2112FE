@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* bộ chọn tất cả phẩn tử */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* bộ chon tag  */
+        h1{
+            border: 1px solid #dcab12;
+            margin:1rem;
+            padding: .5rem;
+        }
+        /* bộ chọn tag01, tag02 */
+        #zone1, #zone2{
+            margin: 1rem;
+            border: 1px solid blue;
+            border-radius: .25rem;
+            min-height: 200px;
+        }
+        /* bộ chọn tag01 tag02 */
+        #zone1 .err{
+            color: red;
+        }
+        #zone1 p{
+            border-bottom: 1px dotted #ccc;
+        }
+        /* bộ chọn tag01 > tag02 */
+        #zone1 > .err{
+            font-size: 1.5rem;
+        }
+        #zone1 > p{
+            border: 1px solid #123abc;
+            margin: 1rem;
+        }
+
+        /* bộ chọn tag01 + tag02 */
+        div + p{
+            background: green;
+        }
+        /* bộ chọn ngữ cảnh */
+        p:first-child{
+            color: #cece13;
+        }
+        p:last-child{
+            color: #be0e1d;
+        }
+        .item p::first-letter{
+            font-size: 2rem;
+        }
+        p::first-line{
+            font-weight: bold;
+        }
+        p:hover{
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+        /* tag01 ~ tag02 */
+        div ~ p{
+            padding: 1rem;
+        }
+
+        #zone2{
+            background-image: url('https://devmaster.edu.vn/uploads/images/devmaster-campaign/devmaster-tuyen-thuc-tap-sinh-chuyen-de-it.png');
+            background-size:cover;
+        }
+    </style>
+</head>
+<body>
+<body>
+    <h1>CSS Selector</h1>
+    <section id="zone1">
+        <div class="item">
+            <p>Đoạn 1</p>
+            <p>Đoạn 2</p>
+            <p>Đoạn 3</p>
+        </div>
+        <div class="item">
+            <div class="err">
+                error1
+            </div>
+        </div>
+        <div class="err">
+            Error ngoài
+        </div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing 
+            elit. Iure soluta dolorem aut fuga asperiores 
+            necessitatibus consequuntur temporibus aspernatur
+        </p>
+
+        <p>
+             repellat cupiditate exercitationem odio itaque 
+             reprehenderit, voluptatum, quod magnam possimus
+              eos ducimus.
+        </p>
+
+    </section>
+    <section id="zone2">
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 10%;
+}
+header{
+    background-color: #ccc;
+}
+nav{
+    background-color: #0082c8;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    display: block;
+    padding: .5rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #ccc;
+}
+ul li:last-child a{
+    border-right: 0;
+}
+nav a:hover{
+    /* background-color: #000;
+    opacity: .19; */
+    background-color: rgba(0,0,0,.19);
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
