@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        div{
+            width: 250px;
+            height: 250px;
+            border: 5px solid green;
+            padding: 1rem;
+            overflow: hidden;
+            position: relative;
+        }
+        div img{
+            width: 100%;
+        }
+        div:hover img{
+            transform: scale(2.0);
+            transition: 5s;
+            cursor: pointer;
+        }
+        div > span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            background-color: green;
+
+        }
+        div:hover > span{
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            opacity: .3;
+            transition: 5s;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <img src="images/sp1.png" alt="image">
+        <span></span>
+    </div>
+</body>
+</html>

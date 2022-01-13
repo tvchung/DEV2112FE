@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #zone1{
+            margin: 5rem;
+            border: 3px solid #f2c3f2;
+            width: 250px;
+            height: 250px;
+            padding: 2rem;
+        }
+        #zone1{
+            position: relative;
+        }
+        .img{
+            position: relative;
+        }
+        .img > img {
+            width: 100%;
+        }
+        .km{
+            position: absolute;
+            background-color: yellow;
+            /* left: 0; */
+            top: 0;
+            right: 0;
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3rem;
+            border-bottom-left-radius: 50%;
+        }
+        
+        footer{
+            position: fixed;
+            bottom: 0;
+            z-index: 9999;
+            width: 100%;
+            height: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position in css</h1>
+    <hr>
+    <div id="zone1">
+        <div class="item">
+            <div class="img">
+                <img src="images/sp1.png" alt="Tết tưng bừng">
+                <span class="km">50%</span>
+            </div>
+            <div class="content">
+                <h3>Sản phẩm 1</h3>
+                <p>Giá: 123.45$</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        devmaster.edu.vn
+    </footer>
+</body>
+</html>
