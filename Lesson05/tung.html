@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<style>
+    *{
+margin: 0;
+padding: 0;
+}
+    nav{
+       border: 1px solid white;
+       margin: 10px 10% ;
+       background-color:rgb(132, 137, 139)
+    }
+    nav ul {
+        list-style: none;
+        display: flex; 
+    }
+    nav ul li{
+        position: relative;
+    }
+    nav li>ul {
+        display: none;
+        width: 250px;
+    }
+    nav a {
+        text-decoration: none;
+        display: block;
+        padding: 1rem;
+        border-right: 1px solid #ccc;
+    }
+    nav a:hover {
+        background: rgb(184, 229, 132); ;
+    }
+    nav ul li:hover > ul{
+        display:flex;
+        background:rgb(81, 84, 85);
+        position: absolute;
+        flex-direction: column;
+    }
+
+    nav >ul li > ul li:hover ul{
+        top: 0px;
+        left: 250px;
+    }
+
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Sản phẩm</a>
+        <ul>
+            <li><a href="#">San pham cap 2</a>
+                <ul>
+                    <li><a href="#">San pham cap 3</a>
+                       
+                    </li>
+                    <li><a href="#">San pham cap 3</a></li>
+                    <li><a href="#">San pham cap 3</a></li>
+                    <li><a href="#">San pham cap 3</a>
+                        <ul>
+                            <li><a href="#">San pham cap 4</a></li>
+                            <li><a href="#">San pham cap 4</a></li>
+                            <li><a href="#">San pham cap 4</a></li>
+                            <li><a href="#">San pham cap 4</a></li>
+                            <li><a href="#">San pham cap 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">San pham cap 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">San pham cap 2</a></li>
+            <li><a href="#">San pham cap 2</a></li>
+            <li><a href="#">San pham cap 2</a></li>
+            <li><a href="#">San pham cap 2</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Dịch vụ</a></li>
+        <li><a href="#">Liên hệ </a></li>
+    </ul>
+</nav>
+</body>
+</html>
